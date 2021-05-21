@@ -17,4 +17,6 @@ npm install cypress
 For initialize o cypress running o command below 
 
 npx cypress open
+
+
 ![Git](https://user-images.githubusercontent.com/50002754/119071096-93882f80-b9bf-11eb-8216-e67fdeb6b18d.PNG)
