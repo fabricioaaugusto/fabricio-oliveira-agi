@@ -14,7 +14,7 @@ Following the next commands:
 
 *npm install cypress*
 
-For initialize o cypress running o command below 
+For initialize the cypress running use command below 
 
 *npx cypress open*
 
