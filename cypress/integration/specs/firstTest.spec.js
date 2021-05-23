@@ -1,4 +1,4 @@
-import easyevents from '../pages/easySite';
+import easyevents from '../../pages/easySite';
 
 describe('Tests Site Easy2Events', () => {
   it('visit Site', () => {
