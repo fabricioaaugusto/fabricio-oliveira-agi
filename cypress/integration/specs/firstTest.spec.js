@@ -1,6 +1,6 @@
 import easyevents from '../../pages/easySite';
 
-describe('Tests Site Easy2Events', () => {
+describe('Tests e2e Site Easy2Events', () => {
   it('visit Site', () => {
     easyevents.getVisitSite();
   });
