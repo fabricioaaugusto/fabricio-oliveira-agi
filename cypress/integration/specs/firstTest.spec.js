@@ -9,5 +9,7 @@ describe('My First Test', () => {
     easyevents.assertHeader('\n          Sobre\n        ', '\n          Serviço\n        ', '\n          Contato\n        ');
   });
 
-    
+  it('Send Email via Form', () => {
+    easyevents.sendEmailViaForm('Fabricio Augusto', 'fabricioaaugusto@gmail.com', 'Gostei do site', 'Parabens Pelo Site');
+  });
 })  

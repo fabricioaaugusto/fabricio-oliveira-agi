@@ -19,5 +19,22 @@ class EasyEvents {
                 .eq(2)
                 .should('have.text', value2);
     }
+
+    sendEmailViaForm(value, value1, value2, value3){
+        return cy
+                .get('#id_nome')
+                .type(value)
+                .get('#id_email')
+                .type(value1)
+                .get('#id_assunto')
+                .type(value2)
+                .get('#id_mensagem')
+                .type(value3)
+                .get('.form-group')
+                .find('div')
+                .eq(8)
+                .find('button')
+                .click();
+    }   
 }
 export default new EasyEvents();
