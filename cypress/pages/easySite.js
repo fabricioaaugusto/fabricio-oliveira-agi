@@ -35,6 +35,31 @@ class EasyEvents {
                 .eq(8)
                 .find('button')
                 .click();
-    }   
+    }
+    
+    registerNewUser(email, firstName, lastName, dateNasc){
+        return cy
+                .get('#navbarDropdownMenuLink')
+                .click()
+                .get('.nav-link')
+                .eq(5)
+                .click()
+                .get('#id_email')
+                .type(email)
+                .get('#id_first_name')
+                .type(firstName)
+                .get('#id_last_name')
+                .type(lastName)
+                .get('#id_born')
+                .clear()
+                .type(dateNasc)
+                .type('{enter}')
+                .get('.form-group')
+                .eq(5)
+                .click({ force: true})
+                .wait(150)
+                .find('value')
+
+    }
 }
 export default new EasyEvents();
