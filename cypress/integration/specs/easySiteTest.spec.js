@@ -1,7 +1,7 @@
 import easyevents from '../../pages/easySite';
 
 describe('Tests e2e Site Easy2Events', () => {
-  it.only('visit Site', () => {
+  it('visit Site', () => {
     easyevents.getVisitSite();
   });
 
@@ -13,7 +13,7 @@ describe('Tests e2e Site Easy2Events', () => {
     easyevents.sendEmailViaForm('Fabricio Augusto', 'fabricioaaugusto@gmail.com', 'Gostei do site', 'Parabens Pelo Site');
   });
 
-  it.only('Register new User', () =>{
+  it('Register new User', () =>{
     easyevents.registerNewUser('fabricioaaugusto@gmail.com', 'Fabricio', 'Oliveira', '09/01/1996');
   });
 
