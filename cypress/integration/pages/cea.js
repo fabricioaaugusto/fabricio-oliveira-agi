@@ -18,7 +18,7 @@ class Cea {
                 .should(value);
     }
 
-    loginSite(){
+    loginSite(loginEmail, senha){
         return cy
                 .get('.cea-cea-store-theme-0-x-header-login')
                 .click()
@@ -26,9 +26,9 @@ class Cea {
                 .contains('entrar')
                 .click({force:true})
                 .get('#L_email')
-                .type('fabricioaaugusto@gmail.com')
+                .type(loginEmail)
                 .get('#senha-login')
-                .type('Sensedia2021')
+                .type(senha)
                 .get('#enviar')
                 .click();
     }

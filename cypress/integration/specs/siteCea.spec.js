@@ -14,7 +14,7 @@ describe('My First Test', () => {
 //    });
 
     it('login site', () => {
-      cea.loginSite();
+      cea.loginSite('fabricioaaugusto@gmail.com', 'Sensedia2021');
     });
 
 })  
