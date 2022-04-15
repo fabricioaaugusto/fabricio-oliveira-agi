@@ -1,4 +1,4 @@
-import ForeverLiss from '../pages/cea';
+import ForeverLiss from '../pages/foreverLiss';
 
 describe('My First Test', () => {
     it('visit site', () => {
