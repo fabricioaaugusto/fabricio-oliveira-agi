@@ -1,20 +1,17 @@
-import cea from '../pages/cea';
+import ForeverLiss from '../pages/cea';
 
 describe('My First Test', () => {
     it('visit site', () => {
-      cea.getVisitSite();
+      ForeverLiss.goSite();
     });
 
-    it('accept cookies', () => {
-      cea.acceptCookies();
+    it('close first modal and accept cookies', () => {
+      ForeverLiss.closeFirstModal();
+      ForeverLiss.acceptCookies();
     });
 
-//    it('verify header site', () => {
-//      cea.assertHeaders('novidades');
-//    });
-
-    it('login site', () => {
-      cea.loginSite('fabricioaaugusto@gmail.com', 'Sensedia2021');
+    it('verify all Categories', () => {
+      ForeverLiss.verifyNavbarAllCategories();
     });
 
 })  

@@ -1,15 +1,54 @@
-class Cea {
+class ForeverLiss {
     
-    getVisitSite(){
-        cy.visit('https://www.cea.com.br/');
+    goSite(){
+        cy.visit('https://www.foreverliss.com.br/');
+    }
+
+    closeFirstModal(){
+        return cy
+                .get('.modal-close')
+                .click();
     }
 
     acceptCookies(){
         return cy
-                .get('button')
-                .contains('Aceitar todos os cookies')
-                .click({force:true});
+                .get('.consent-give')
+                .contains('Continuar')
+                .click();
     }
+
+    verifyNavbarAllCategories(){
+        return cy
+                .get('.navbar-categories-nv-0')
+                .eq(2)
+                .contains('have.text', 'wwww')
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     assertHeaders(value){
         return cy
@@ -34,4 +73,4 @@ class Cea {
     }
 
 }
-export default new Cea();
+export default new ForeverLiss();
