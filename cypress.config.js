@@ -1,6 +1,6 @@
 module.exports = {
-  viewportWidth: 1350,
-  viewportHeight: 800,
+  viewportWidth: 1368,
+  viewportHeight: 768,
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
