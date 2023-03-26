@@ -5,7 +5,7 @@ describe('Testando busca CEP', () => {
     cy.visit('https://buscacepinter.correios.com.br/app/endereco/index.php')
   })
   
-  it.only('Fazer uma busca de CEP valido', () => {
+  it('Fazer uma busca de CEP valido', () => {
     BuscaCEPage.buscarCEPValido('13058381', 'Todos');
   });
  

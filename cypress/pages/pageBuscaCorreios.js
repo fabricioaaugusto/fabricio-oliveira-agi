@@ -1,7 +1,6 @@
 class BuscaCEPage {
 
     buscarCEPValido(digitaCEP, tipoCEP1){
-        cy.intercept('/endereco/*').as('waitCEP')
         cy.get('#endereco')
             .should('be.visible')
             .click()
